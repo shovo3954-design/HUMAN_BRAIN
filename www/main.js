@@ -30,4 +30,11 @@ $(document).ready(function(){
         out: { effect: "fadeOutUp" }
     });
 
+    //Mike button click event
+        $("#MikeBtm").click(function () {
+            eel.PlayAssistantSound()
+            $("#Oval").attr("hidden", true);
+            $("#SiriWave").attr("hidden", false);
+    });
+
 })
