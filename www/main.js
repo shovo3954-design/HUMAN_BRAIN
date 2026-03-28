@@ -22,13 +22,16 @@ $(document).ready(function(){
     });
 
     //Siri message animation
-    $(".siri-message").textillate({
-        loop: true,
-        minDisplayTime: 2500,
-        delay: 50,
-        in: { effect: "fadeInUp" },
-        out: { effect: "fadeOutUp" }
-    });
+    $("#siri-message").textillate({
+        loop:true,
+        sync:true,
+        in:{
+            effect:"bounceIn",
+        },
+        out:{
+            effect:"bounceOut",
+        }
+    })
 
     //Mike button click event
         $("#MikeBtm").click(function () {
